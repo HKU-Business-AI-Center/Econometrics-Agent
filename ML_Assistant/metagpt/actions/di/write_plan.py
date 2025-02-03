@@ -27,6 +27,7 @@ class WritePlan(Action):
     Based on the context, write a plan or modify an existing plan of what you should do to achieve the goal. A plan consists of one to {max_tasks} tasks.
     If you are modifying an existing plan, carefully follow the instruction, don't make unnecessary changes. Give the whole plan unless instructed to modify only one task of the plan.
     If you encounter errors on the current task, revise and output the current single task only.
+    
     Output a list of jsons following the format:
     ```json
     [

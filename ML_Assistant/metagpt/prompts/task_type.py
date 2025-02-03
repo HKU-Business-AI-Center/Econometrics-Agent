@@ -6,8 +6,9 @@ The current task is about exploratory data analysis, please note the following:
 """
 
 # Prompt for taking on "data_preprocess" tasks
-DATA_PREPROCESS_PROMPT = """
+FUTURES_CONTRACT_PROMPT = """
 The current task is about data preprocessing, please note the following:
+- Drop nan value, and the started some lines include the nan value, please read the middle lines   to identify the input csv file's structure.
 - Monitor data types per column, applying appropriate methods.
 - Ensure operations are on existing dataset columns.
 - Avoid writing processed data to files.
@@ -16,6 +17,11 @@ The current task is about data preprocessing, please note the following:
 - Only encode or scale necessary columns to allow for potential feature-specific engineering tasks (like time_extract, binning, extraction, etc.) later.
 - Each step do data preprocessing to train, must do same for test separately at the same time.
 - Always copy the DataFrame before processing it and use the copy to process.
+"""
+
+CALCULATE_MAIN_CONTRACT_PROMPT = """
+- Calculate the main contract by summing trading volumes and identify the main RIC for each day
+- Determine the main contract (RIC identifier) based on the trading volume with sum operation by RIC and specific date, the specific date is determined by an offset and target date, the default offset is -1 (which means 1 day prior to target date)
 """
 
 # Prompt for taking on "feature_engineering" tasks

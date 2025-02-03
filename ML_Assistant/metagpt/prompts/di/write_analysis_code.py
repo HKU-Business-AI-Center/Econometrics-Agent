@@ -15,6 +15,9 @@ STRUCTUAL_PROMPT = """
 - Take on Current Task if it is in Plan Status, otherwise, tackle User Requirement directly.
 - Ensure the output new code is executable in the same Jupyter notebook as the previous executed code.
 - Always prioritize using pre-defined tools for the same functionality.
+- If you are meeting a main contract task, please strictly follow the following constraints in the task description:
+    1. Drop nan value, and the started some lines include the nan value, please read the middle lines   to identify the input csv file's structure.
+    2. Determine the main contract (RIC identifier) based on the trading volume  with sum operation by RIC and specific date, the specific date is determined by an offset and target date, the default offset is -1 (which means 1 day prior to target date) 
 - When you need to generate an visualization content, please do not use plt.show(), but save the image into a local file and print the saving path(The saving path is always "/Users/tuozhou/Desktop/RA/SZRI/ML_Assistant/data/output/image", and the print statement code is always "print(f'Image saved to: {{file_path}}')"). For example:
 ```
 timestamp = int(time.time())

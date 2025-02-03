@@ -66,9 +66,9 @@ google-generativeai==0.4.1
 playwright>=1.26  # used at metagpt/tools/libs/web_scraping.py
 anytree
 ipywidgets==8.1.1
-Pillow
+Pillow~=10.4.0
 imap_tools==1.5.0  # Used by metagpt/tools/libs/email_login.py
-qianfan~=0.4.4
+qianfan~=0.3.18
 dashscope~=1.19.3
 rank-bm25==0.2.2  # for tool recommendation
 jieba==0.42.1  # for tool recommendation
@@ -78,4 +78,18 @@ volcengine-python-sdk[ark]~=1.0.94
 gymnasium==0.29.1
 boto3~=1.34.69
 spark_ai_python~=0.3.30
-agentops
+agentops~=0.3.10
+metagpt~=0.8.1
+uuid~=1.30
+scikit-learn~=1.3.2
+requests~=2.31.0
+chromadb~=0.5.5
+joblib~=1.4.2
+selenium~=4.25.0
+chardet~=5.2.0
+pygments~=2.18.0
+regex~=2023.12.25
+botocore~=1.34.162
+psutil~=5.9.8
+python-dotenv~=1.0.0
+streamlit~=1.39.0
