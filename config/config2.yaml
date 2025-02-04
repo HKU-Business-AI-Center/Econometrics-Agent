@@ -1,5 +1,5 @@
 llm:
   api_type: "openai"  # or azure / ollama / groq etc.
   model: "gpt-4o"  # or gpt-3.5-turbo
-  base_url: "https://vbcqnjbp.bja.sealos.run/v1"  # or forward url / other llm url
-  api_key: "sk-bx2gaQfD67NAF6znB9B07f195cE14eDe875954C3D3556dF2"
+  base_url: "https://api.rcouyi.com/v1"  # or forward url / other llm url
+  api_key: "sk-olHf1RqTJBQvCDqX2d2dEd4c101741CfAa430c0b9d2368E3"

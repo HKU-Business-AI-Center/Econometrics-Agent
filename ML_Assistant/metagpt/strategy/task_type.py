@@ -31,46 +31,46 @@ class TaskType(Enum):
     )
     CALCULATE_MAIN_CONTRACT = TaskTypeDef(
         name="calculate main contract",
-        desc="Calculate the main contract by summing trading volumes and identify the main RIC for each day; Determine the main contract (RIC identifier) based on the trading volume  with sum operation by RIC and time window previous to the target day, defualt time window length is 1 day ",
+        desc="Calculate the main contract by summing trading volumes and identify the main RIC for each day; Determine the main contract (RIC identifier) based on the trading volume with sum operation by RIC and time window previous to the target day, defualt time window length is 1 day",
         guidance=CALCULATE_MAIN_CONTRACT_PROMPT,
     )
 
 
-    FEATURE_ENGINEERING = TaskTypeDef(
-        name="fea new columnsture engineering",
-        desc="Only for creating for input data.",
-        guidance=FEATURE_ENGINEERING_PROMPT,
-    )
-    MODEL_TRAIN = TaskTypeDef(
-        name="model train",
-        desc="Only for training model.",
-        guidance=MODEL_TRAIN_PROMPT,
-    )
-    MODEL_EVALUATE = TaskTypeDef(
-        name="model evaluate",
-        desc="Only for evaluating model.",
-        guidance=MODEL_EVALUATE_PROMPT,
-    )
-    IMAGE2WEBPAGE = TaskTypeDef(
-        name="image2webpage",
-        desc="For converting image into webpage code.",
-        guidance=IMAGE2WEBPAGE_PROMPT,
-    )
+    # FEATURE_ENGINEERING = TaskTypeDef(
+    #     name="fea new columnsture engineering",
+    #     desc="Only for creating for input data.",
+    #     guidance=FEATURE_ENGINEERING_PROMPT,
+    # )
+    # MODEL_TRAIN = TaskTypeDef(
+    #     name="model train",
+    #     desc="Only for training model.",
+    #     guidance=MODEL_TRAIN_PROMPT,
+    # )
+    # MODEL_EVALUATE = TaskTypeDef(
+    #     name="model evaluate",
+    #     desc="Only for evaluating model.",
+    #     guidance=MODEL_EVALUATE_PROMPT,
+    # )
+    # IMAGE2WEBPAGE = TaskTypeDef(
+    #     name="image2webpage",
+    #     desc="For converting image into webpage code.",
+    #     guidance=IMAGE2WEBPAGE_PROMPT,
+    # )
     OTHER = TaskTypeDef(name="other", desc="Any tasks not in the defined categories")
 
     # Legacy TaskType to support tool recommendation using type match. You don't need to define task types if you have no human priors to inject.
-    TEXT2IMAGE = TaskTypeDef(
-        name="text2image",
-        desc="Related to text2image, image2image using stable diffusion model.",
-    )
-    WEBSCRAPING = TaskTypeDef(
-        name="web scraping",
-        desc="For scraping data from web pages.",
-    )
-    EMAIL_LOGIN = TaskTypeDef(
-        name="email login",
-        desc="For logging to an email.",
-    )
+    # TEXT2IMAGE = TaskTypeDef(
+    #     name="text2image",
+    #     desc="Related to text2image, image2image using stable diffusion model.",
+    # )
+    # WEBSCRAPING = TaskTypeDef(
+    #     name="web scraping",
+    #     desc="For scraping data from web pages.",
+    # )
+    # EMAIL_LOGIN = TaskTypeDef(
+    #     name="email login",
+    #     desc="For logging to an email.",
+    # )
 
     @property
     def type_name(self):

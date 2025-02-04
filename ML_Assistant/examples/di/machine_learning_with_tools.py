@@ -16,9 +16,9 @@ async def main_generator(requirement: str):
     await log_execution("#### 🔥Starting main function\n")
     role = DataInterpreter(use_reflection=True, tools=["<all>"])
     await role.run(requirement)
-    role.set_actions([WriteAnalysisCode])
-    role._set_state(0)
-    await role.run(requirement_2)
+    # role.set_actions([WriteAnalysisCode])
+    # role._set_state(0)
+    # await role.run(requirement_2)
     save_history(role=role)
     await log_execution("#### Finished main function😊\n")
 

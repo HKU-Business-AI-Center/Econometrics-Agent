@@ -8,20 +8,19 @@ The current task is about exploratory data analysis, please note the following:
 # Prompt for taking on "data_preprocess" tasks
 FUTURES_CONTRACT_PROMPT = """
 The current task is about data preprocessing, please note the following:
-- Drop nan value, and the started some lines include the nan value, please read the middle lines   to identify the input csv file's structure.
-- Monitor data types per column, applying appropriate methods.
-- Ensure operations are on existing dataset columns.
-- Avoid writing processed data to files.
-- Avoid any change to label column, such as standardization, etc.
-- Prefer alternatives to one-hot encoding for categorical data.
-- Only encode or scale necessary columns to allow for potential feature-specific engineering tasks (like time_extract, binning, extraction, etc.) later.
-- Each step do data preprocessing to train, must do same for test separately at the same time.
-- Always copy the DataFrame before processing it and use the copy to process.
+- Read the CSV file from a specified file path (e.g., /path/to/your/file.csv).
+- Print the first several rows of the CSV file to inspect its structure. This will help determine the correct column names for trading dates, trading volume, and contract identifiers (RIC).
+- Identify some essential columns, for example:
+    •	Trade Date: The column representing the trading date (e.g., “Trade Date”). Convert this column to datetime format.
+	•	Volume: The column representing the trading volume (e.g., “Volume” or “TradingVolume”). Ensure this column is numeric (convert to integer if necessary, handling any formatting issues such as commas).
+	•	RIC: The column representing the contract identifier. Ensure this column is treated as a string.
+- Remove all rows containing any NaN values to ensure clean data.
 """
 
 CALCULATE_MAIN_CONTRACT_PROMPT = """
 - Calculate the main contract by summing trading volumes and identify the main RIC for each day
 - Determine the main contract (RIC identifier) based on the trading volume with sum operation by RIC and specific date, the specific date is determined by an offset and target date, the default offset is -1 (which means 1 day prior to target date)
+- Group the data by “Trade Date” and “RIC”, summing up the trading volume for each group; Notice as_index if groupby is applied
 """
 
 # Prompt for taking on "feature_engineering" tasks
