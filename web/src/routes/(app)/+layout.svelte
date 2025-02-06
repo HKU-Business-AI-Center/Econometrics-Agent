@@ -35,6 +35,7 @@
 	import ShortcutsModal from '$lib/components/chat/ShortcutsModal.svelte';
 	import ChangelogModal from '$lib/components/ChangelogModal.svelte';
 	import Tooltip from '$lib/components/common/Tooltip.svelte';
+	import ChartView from '$lib/components/layout/ChartView.svelte';
 
 	let ollamaVersion = '';
 	let loaded = false;
@@ -313,6 +314,7 @@
 			<SettingsModal bind:show={$showSettings} />
 			<ChangelogModal bind:show={$showChangelog} />
 			<slot />
+			<ChartView />
 		</div>
 	</div>
 {/if}

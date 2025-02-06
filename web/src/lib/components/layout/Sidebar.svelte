@@ -98,7 +98,7 @@
 	bind:this={navElement}
 	class="h-screen max-h-[100dvh] min-h-screen {show
 		? 'lg:relative w-[260px]'
-		: '-translate-x-[260px] w-[0px]'}  bg-black text-gray-200 shadow-2xl text-sm transition z-40 fixed top-0 left-0
+		: '-translate-x-[260px] w-[0px]'}  bg-black text-gray-200 shadow-2xl text-sm transition z-40 relative top-0 left-0
         "
 >
 	<div
@@ -604,30 +604,30 @@
 								{/if}
 
 								<button
-                                    class="flex py-2.5 px-3.5 w-full hover:bg-gray-800 transition"
-                                    on:click={() => {
-                                        goto('/playground');
-                                        showDropdown = false;
-                                    }}
-                                >
-                                    <div class=" self-center mr-3">
-                                        <svg
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            fill="none"
-                                            viewBox="0 0 24 24"
-                                            stroke-width="1.5"
-                                            stroke="currentColor"
-                                            class="w-5 h-5"
-                                        >
-                                            <path
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"
-                                                d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
-                                            />
-                                        </svg>
-                                    </div>
-                                    <div class=" self-center font-medium">Playground</div>
-                                </button>
+									class="flex py-2.5 px-3.5 w-full hover:bg-gray-800 transition"
+									on:click={() => {
+										goto('/playground');
+										showDropdown = false;
+									}}
+								>
+									<div class=" self-center mr-3">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											fill="none"
+											viewBox="0 0 24 24"
+											stroke-width="1.5"
+											stroke="currentColor"
+											class="w-5 h-5"
+										>
+											<path
+												stroke-linecap="round"
+												stroke-linejoin="round"
+												d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
+											/>
+										</svg>
+									</div>
+									<div class=" self-center font-medium">Playground</div>
+								</button>
 
 								<button
 									class="flex py-2.5 px-3.5 w-full hover:bg-gray-800 transition"
