@@ -186,4 +186,5 @@ web/.svelte-kit/
 web/.svelte-kit
 # web/build
 web/node_modules
+web/build
 web/.yarn
