@@ -1,7 +1,10 @@
 <script lang="ts">
 	import { FileChartBarOutline } from 'flowbite-svelte-icons';
 	export let fileList = '';
-	export let selectedItem: any[] = [];
+	export let selectedItem: any = {
+		file: '',
+		content: []
+	};
 
 	// 解析 JSON 字符串
 	let files = [];
@@ -13,7 +16,7 @@
 
 	// 处理按钮点击事件
 	function handleClick(item: any) {
-		selectedItem = item.content;
+		selectedItem = item;
 		console.log(selectedItem);
 	}
 </script>

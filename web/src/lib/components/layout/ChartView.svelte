@@ -184,7 +184,10 @@
 
 	`;
 
-	let selectedItem: any[] = [];
+	let selectedItem: any = {
+		file: '',
+		content: []
+	};
 
 	let show = false;
 	onMount(async () => {
@@ -231,8 +234,8 @@
 			</button>
 		</Tooltip>
 	</div>
-	<div class="overflow-auto w-full h-full flex flex-col">
+	<div class="overflow-auto w-full h-full flex flex-col gap-4">
 		<FileList bind:fileList bind:selectedItem />
-		<DataTable bind:selectedItem />
+		<DataTable {selectedItem} />
 	</div>
 </div>
