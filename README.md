@@ -1,6 +1,6 @@
 # Econometrics AI Agent
 
-This repository hosts the official implementation for the research paper: "[Can AI Master Econometrics? Evidence from Econometrics AI Agent on Expert-Level Tasks](link_to_your_paper_if_available_online_or_arxiv)".
+This repository hosts the official implementation for the research paper: "[Can AI Master Econometrics? Evidence from Econometrics AI Agent on Expert-Level Tasks](https://arxiv.org/abs/2506.00856)".
 
 The **Econometrics AI Agent** is an LLM-driven, specialized AI agent designed to automate complex econometric analysis, traditionally requiring significant human expertise. This project addresses the challenge of applying AI to intricate, domain-specific tasks where general-purpose Large Language Models (LLMs) and AI agents often fall short without costly fine-tuning or specialized retraining.
 
@@ -16,21 +16,21 @@ https://github.com/user-attachments/assets/30732765-f718-43fb-9c60-f46aaa8e63c8
 
 The Econometrics AI Agent demonstrates robust performance in:
 
-* **Strategic Planning:** Intelligently planning and decomposing complex econometric tasks into manageable sub-tasks.
-* **Code Generation & Execution:** Automatically generating and executing Python code for various econometric analyses.
-* **Error-Based Reflection:** Employing a reflection mechanism to evaluate action outcomes, learn from errors, and improve the robustness of its solutions.
-* **Iterative Refinement:** Allowing users to engage in multi-round conversations for iterative task refinement and to meet specific user needs.
-* **Domain-Specific Tool Usage:** Utilizing a rich library of pre-defined econometric tools and functions (e.g., IV-2SLS, DID, RDD, Propensity Score Methods) to perform accurate analyses.
+*   **Strategic Planning:** Intelligently planning and decomposing complex econometric tasks into manageable sub-tasks.
+*   **Code Generation & Execution:** Automatically generating and executing Python code for various econometric analyses.
+*   **Error-Based Reflection:** Employing a reflection mechanism to evaluate action outcomes, learn from errors, and improve the robustness of its solutions.
+*   **Iterative Refinement:** Allowing users to engage in multi-round conversations for iterative task refinement and to meet specific user needs.
+*   **Domain-Specific Tool Usage:** Utilizing a rich library of pre-defined econometric tools and functions (e.g., IV-2SLS, DID, RDD, Propensity Score Methods) to perform accurate analyses.
 
 ## Why Econometrics AI Agent?
 
 Our comparative tests show that this domain-specialized agent significantly **outperforms benchmark LLMs and general-purpose AI agents** (like a general Data Interpreter without the specialized toolkit) in expert-level econometric tasks. This project aims to:
 
-* **Democratize Expertise:** Make advanced econometric methods accessible to users with minimal coding expertise, including students and practitioners.
-* **Boost Research Productivity:** Serve as a powerful tool for academic researchers and industry practitioners, accelerating the empirical research process.
-* **Enhance Reproducibility:** Contribute to improving the reproducibility of empirical research.
-* **Educational Applications:** Offer promising applications for econometrics teaching and learning.
-* **Cost-Effective Specialization:** Provide a low-cost, high-accuracy solution for injecting domain knowledge into AI systems, bypassing the need for extensive fine-tuning.
+*   **Democratize Expertise:** Make advanced econometric methods accessible to users with minimal coding expertise, including students and practitioners.
+*   **Boost Research Productivity:** Serve as a powerful tool for academic researchers and industry practitioners, accelerating the empirical research process.
+*   **Enhance Reproducibility:** Contribute to improving the reproducibility of empirical research.
+*   **Educational Applications:** Offer promising applications for econometrics teaching and learning.
+*   **Cost-Effective Specialization:** Provide a low-cost, high-accuracy solution for injecting domain knowledge into AI systems, bypassing the need for extensive fine-tuning.
 
 This repository provides the complete source code, datasets used for evaluation (from academic coursework and published papers), and the framework for the Econometrics AI Agent. We encourage researchers, students, and practitioners to explore, utilize, and extend its capabilities for their econometric analysis needs.
 
@@ -45,7 +45,7 @@ Welcome to the Econometrics AI Agent! This guide will help you install and run t
 First, clone the Econometrics AI Agent project to your local machine:
 
 ```bash
-git clone https://github.com/FromCSUZhou/Econometric-Agent
+git clone https://github.com/FromCSUZhou/Econometrics-Agent
 ```
 
 ### 2. Navigate to the Project Directory
@@ -53,7 +53,7 @@ git clone https://github.com/FromCSUZhou/Econometric-Agent
 Change into the project's root directory:
 
 ```bash
-cd Econometric-Agent
+cd Econometrics-Agent
 ```
 
 ### 3. Set Up Configuration
@@ -193,20 +193,19 @@ If you encounter any issues during installation or operation, please consider th
 
 If you use the Econometrics AI Agent in your research, please cite our paper:
 
-```
-(TODO: Add BibTeX or preferred citation format for your paper here once available)
-Example:
-@article{YourLastName_EconometricsAI_2024,
-  title={Can AI Master Econometrics? Evidence from Econometrics AI Agent on Expert-Level Tasks},
-  author={Your Name and Co-authors},
-  journal={Journal/Conference or arXiv},
-  year={2024},
-  url={link_to_your_paper_if_available_online_or_arxiv}
+```bibtex
+@misc{chen2025econometricsai,
+  title     = {Can AI Master Econometrics? Evidence from Econometrics AI Agent on Expert-Level Tasks},
+  author    = {Qiang Chen and Tianyang Han and Jin Li and Ye Luo and Yuxiao Wu and Xiaowei Zhang and Tuo Zhou},
+  year      = {2025},
+  eprint    = {2506.00856},
+  archivePrefix = {arXiv},
+  primaryClass  = {econ.EM},
+  doi       = {10.48550/arXiv.2506.00856},
+  url       = {https://arxiv.org/abs/2506.00856}
 }
 ```
 
 ## License
 
-This project is licensed under the [Specify Your License Here - e.g., Apache 2.0, MIT License]. See the `LICENSE` file for details.
-
-*(Consider adding a `LICENSE` file to your repository if you haven't already.)*
+This project is licensed under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0). See the `LICENSE` file for details.
